@@ -32,6 +32,8 @@
 <body>
   <div id="jwplayerDiv"></div>
   <script type="text/javascript">
+    var queryString = window.location.search;
+    var urlParams = new URLSearchParams(queryString);
     var id = urlParams.get('id');
 url = "https://astro.livecricketsl.xyz/proxy/"+id+".php/get/index.m3u8";
   jwplayer("jwplayerDiv").setup({
