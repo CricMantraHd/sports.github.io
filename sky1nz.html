@@ -11,10 +11,8 @@
   <meta charset="UTF-8">
   <title>HD Stream</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
- <script type='text/javascript' src='//heartilyfootindebted.com/53/5c/a7/535ca7dfab2e7cc0dbd455745f42d9cf.js' async></script>
   <style>
     body {
       margin: 0px
@@ -34,7 +32,8 @@
 <body>
   <div id="jwplayerDiv"></div>
   <script type="text/javascript">
-url = "https://astro.livecricketsl.xyz/proxy/sky1nz.php/get/index.m3u8";
+    var id = urlParams.get('id');
+url = "https://astro.livecricketsl.xyz/proxy/"+id+".php/get/index.m3u8";
   jwplayer("jwplayerDiv").setup({
     file: url,
     position: 'bottom',
